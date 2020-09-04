@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        function person(){};
+        var p = new person();
+        p.name = 'leeyongchan';
+        p.introduce = function(){'My name is ' + this.name;}
+        document.write(p.introduce());
+        
+        // 2
+        function person(){};
+        var p1 = new person();
+        p1.name = 'leeyongchan';
+        p1.introduce = function(){return 'My name is ' + this.name;}
+        document.write(p1.introduce()+"<br />");
+
+        function person(){};
+        var p2 = new person();
+        p2.name = 'leeyongchan';
+        p2.introduce = function(){return 'My name is ' + this.name;}
+        document.write(p2.introduce());
+
+        //3
+        function person(name){
+            this.name = name;
+            this.introduce = function(){return 'My name is ' + this.name};
+        }
+
+        var p1 = new person('leeyongchan');
+        var p2 = new person('LALA');
+        document.write(p1.introduce());
+        document.write(p2.introduce());
+
+
+    </script>
+</body>
+</html>

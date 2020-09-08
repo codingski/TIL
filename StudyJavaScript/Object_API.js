@@ -48,4 +48,4 @@ for(var name in o)
 //hasOwnProperty는 인자로 전달된 속성의 이름이 객체의 속성인지 여부를 판단한다.
 //만약 prototype으로 상속 받은 객체라면 false가 된다. 
 
-// 참조: 생활코딩
+// 참조: 생활코딩 
